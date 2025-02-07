@@ -17,16 +17,16 @@ export class SidebarComponent implements OnInit {
         {
             label: 'Home',
             items: [
-                { label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/'] }
+                { label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/main/dashboard'] }
             ]
         },
         {
             label: 'Menu',
             items: [
-                { label: 'Subastas', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/formlayout'] },
-                { label: 'Proyectos', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/input'] },
-                { label: 'Favoritos', icon: 'pi pi-fw pi-bookmark', routerLink: ['/uikit/floatlabel'] },
-                { label: 'Usuarios', icon: 'pi pi-fw pi-bookmark', routerLink: ['/uikit/floatlabel'] },
+                { label: 'Auctions', icon: 'pi pi-fw pi-id-card', routerLink: ['/main/auctions'] },
+                { label: 'Projects', icon: 'pi pi-fw pi-check-square', routerLink: ['/main/projects'] },
+                { label: 'Favorites', icon: 'pi pi-fw pi-bookmark', routerLink: ['/main/favorites'] },
+                { label: 'Users', icon: 'pi pi-fw pi-bookmark', routerLink: ['/main/users'] }
             ]
         },
     ];

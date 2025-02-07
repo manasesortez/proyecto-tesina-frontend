@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CoreModule } from '../core/core.module';
 import { PublicModule } from '../public/public.module';
 import { ConfigComponent } from './config/config.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SidebarModule } from 'primeng/sidebar';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { ButtonModule } from 'primeng/button';
@@ -28,6 +28,7 @@ import { RouterModule } from '@angular/router'; // Import RouterModule
     CommonModule,
     CoreModule,
     FormsModule,
+    ReactiveFormsModule,
     SidebarModule,
     RadioButtonModule,
     ButtonModule,

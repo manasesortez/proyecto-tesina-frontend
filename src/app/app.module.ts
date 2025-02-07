@@ -10,12 +10,21 @@ import { SharedModule } from './shared/shared.module';
 import { AuthGuard } from './core/guards/auth.guard';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { CountryService } from './core/services/country.service';
+import { CustomerService } from './core/services/customer.service';
+import { EventService } from './core/services/event.service';
+import { IconService } from './core/services/icon.service';
+import { NodeService } from './core/services/node.service';
+import { PhotoService } from './core/services/photo.service';
+import { ProductService } from './core/services/product.service';
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
@@ -25,8 +34,12 @@ import { FormsModule } from '@angular/forms';
     SharedModule
   ],
   providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
     AuthGuard,
-    OutletContext
+    OutletContext,
+
+    CountryService, CustomerService, EventService, IconService, NodeService,
+        PhotoService, ProductService
   ],
   bootstrap: [AppComponent]
 })
