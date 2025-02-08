@@ -11,6 +11,9 @@ import { FormsModule } from '@angular/forms';
 import { PasswordModule } from 'primeng/password';
 import { InputTextModule } from 'primeng/inputtext';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { FileUploadModule } from 'primeng/fileupload';
 
 const routes: Routes = [
   {
@@ -54,6 +57,10 @@ const routes: Routes = [
     InputTextModule,
     FormsModule,
     PasswordModule,
+
+    RadioButtonModule,
+    FileUploadModule,
+    
     RouterModule.forChild(routes)
   ],
   providers: [

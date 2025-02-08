@@ -5,3 +5,30 @@
     color: var(--primary-color) !important;
 }
 
+.field-radiobutton {
+    display: flex;
+    align-items: center;
+}
+
+.field-radiobutton label {
+    margin-left: 0.5rem;
+}
+
+.selected-card {
+    background-color: var(--primary-color-light);
+    border-radius: 20px;
+    font-size: 10px !important;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.pd-all{
+    padding: 10px !important;
+}
+
+.file-is{
+    font-size: 15px;
+}

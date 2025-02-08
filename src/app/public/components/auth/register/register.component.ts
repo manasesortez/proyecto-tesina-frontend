@@ -9,8 +9,23 @@ import { LayoutService } from 'src/app/core/services/layout.service';
 export class RegisterComponent {
 
   valCheck: string[] = ['remember'];
-
+  userType: string = ''; // Valor por defecto
   password!: string;
 
   constructor(public layoutService: LayoutService) { }
+
+  selectUserType(type: string) {
+    this.userType = type;
+  }
+
+  public onFileSelectDocument(event: any) {
+    if (event.target.files && event.target.files[0]) {
+      for (let i = 0; i < event.target.files.length; i++) {
+        var reader = new FileReader();
+        reader.onload = (event: any) => {};
+        reader.readAsDataURL(event.target.files[0]);
+      }
+    }
+  }
+  
 }
