@@ -18,7 +18,7 @@ export class RegisterComponent {
     this.userType = type;
   }
 
-  public onFileSelectDocument(event: any) {
+  public onFileSelectProfilePhoto(event: any) {
     if (event.target.files && event.target.files[0]) {
       for (let i = 0; i < event.target.files.length; i++) {
         var reader = new FileReader();
@@ -28,4 +28,23 @@ export class RegisterComponent {
     }
   }
   
+  public onFileSelectProfilePhotoLogo(event: any) {
+    if (event.target.files && event.target.files[0]) {
+      for (let i = 0; i < event.target.files.length; i++) {
+        var reader = new FileReader();
+        reader.onload = (event: any) => {};
+        reader.readAsDataURL(event.target.files[0]);
+      }
+    }
+  }
+
+  public onFileSelectProfilePhotoCompany(event: any) {
+    if (event.target.files && event.target.files[0]) {
+      for (let i = 0; i < event.target.files.length; i++) {
+        var reader = new FileReader();
+        reader.onload = (event: any) => {};
+        reader.readAsDataURL(event.target.files[0]);
+      }
+    }
+  }
 }
